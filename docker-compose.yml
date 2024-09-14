@@ -11,7 +11,7 @@ services:
       - "5000:5000"
     environment:
 #      - OPENAI_API_KEY=${OPENAI_API_KEY}
-      - OPENAI_API_KEY=sk-vLgqCbPspWyCRsCC-7wfL1N9f14-O18mdw4ewFcxQgT3BlbkFJ660D_Xv53TQxOGC7xpUvnyto_ylYNb1c2AxaZXocUA
+      - OPENAI_API_KEY=tu-api-key-aqui
       - ELASTICSEARCH_URL=elasticsearch  # Conectar usando el nombre del servicio de Elasticsearch
       - REDIS_HOST=redis
     depends_on:

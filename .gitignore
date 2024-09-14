@@ -1,0 +1,65 @@
+# Python archivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de entorno virtual
+venv/
+.env
+*.env
+
+# Archivos de configuración de IDE
+.vscode/
+.idea/
+
+# Archivos de configuración de editor
+*.swp
+*.swo
+*.swn
+
+# Archivos de log
+*.log
+
+# Archivos de base de datos SQLite
+*.db
+*.sqlite3
+
+# Archivos de caché de Jupyter Notebook
+.ipynb_checkpoints/
+
+# Archivos de Docker
+docker-compose.override.yml
+docker-compose.override.yml.*
+
+# Archivos generados de Docker
+docker-compose.yml~
+Dockerfile~
+*.tar
+
+# Archivos de volúmenes de Docker
+redisdata/
+esdata/
+
+# Archivos de ElasticSearch
+es_backup/
+
+# Dependencias instaladas
+*.egg-info/
+dist/
+build/
+
+# Archivos de almacenamiento temporal
+tmp/
+temp/
+
+# Archivos de salida de pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Archivos de Node (si se utiliza npm o Yarn)
+node_modules/
+
+# Otros archivos temporales
+*.bak
+*.tmp

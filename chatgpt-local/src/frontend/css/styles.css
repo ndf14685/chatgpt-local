@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+    border-right: 1px solid #ddd;
+}
+
+.chat-window {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header, .chat-footer {
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}

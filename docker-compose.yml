@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  chatgpt:
+    build:
+      context: ./chatgpt-local
+      dockerfile: Dockerfile
+    image: chatgpt-local:latest
+    container_name: chatgpt-container
+    ports:
+      - "5000:5000"
+    environment:
+#      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_API_KEY=sk-vLgqCbPspWyCRsCC-7wfL1N9f14-O18mdw4ewFcxQgT3BlbkFJ660D_Xv53TQxOGC7xpUvnyto_ylYNb1c2AxaZXocUA
+      - ELASTICSEARCH_URL=elasticsearch  # Conectar usando el nombre del servicio de Elasticsearch
+      - REDIS_HOST=redis
+    depends_on:
+      - elasticsearch
+      - redis
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.1.0
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false  # Desactiva la seguridad para el entorno de desarrollo
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+
+volumes:
+  esdata:
+  redisdata:

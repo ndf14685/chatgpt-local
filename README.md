@@ -57,10 +57,10 @@ Este comando hará lo siguiente:
 - Iniciará la aplicación Flask en el puerto 5000.
 
 
-##Uso
+## Uso
 Una vez que los contenedores estén en ejecución, puedes interactuar con la API enviando solicitudes HTTP.
 
-##Enviar una Solicitud de Chat
+## Enviar una Solicitud de Chat
 Para enviar una solicitud de chat a la aplicación, utiliza curl o cualquier herramienta para realizar solicitudes HTTP:
 
 ```bash
@@ -78,7 +78,7 @@ Reemplaza ID_DEL_USUARIO con el identificador del usuario cuyo historial deseas 
 
 
 
-##Solución de Problemas
+## Solución de Problemas
 Error: No module named '...'
 Si obtienes errores relacionados con módulos faltantes, asegúrate de que todas las dependencias estén correctamente listadas en el archivo requirements.txt y que hayas reconstruido el contenedor:
 
@@ -89,7 +89,7 @@ docker-compose up --build
 Error de Cuota Excedida
 Si recibes un error de "exceeded your current quota" de OpenAI, revisa tu plan y detalles de facturación en la plataforma de OpenAI. Asegúrate de tener suficiente cuota para hacer las solicitudes.
 
-##TODO: 
+## TODO: 
 - Revisar persistencia de data, no esta funcionando
 - Realizar un frontend que consuma esta api, ver si sirve
 - La respuesta se limita a dos o tres lineas (limitaciones de api me parece)

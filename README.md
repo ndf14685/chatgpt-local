@@ -60,7 +60,7 @@ Este comando hará lo siguiente:
 ##Uso
 Una vez que los contenedores estén en ejecución, puedes interactuar con la API enviando solicitudes HTTP.
 
-**Enviar una Solicitud de Chat
+##Enviar una Solicitud de Chat
 Para enviar una solicitud de chat a la aplicación, utiliza curl o cualquier herramienta para realizar solicitudes HTTP:
 
 ```bash
